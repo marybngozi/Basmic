@@ -1,0 +1,10 @@
+
+node_modules
+.vscode
+*.log
+.env
+public/uploads/schedule/*.xlsx
+public/logos/*.png
+public/logos/*.jpg
+public/logos/*.jpeg
+!public/logos/null_female.png
