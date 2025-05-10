@@ -19,6 +19,40 @@ const router = createRouter({
       path: '/products',
       name: 'products',
       component: About,
+      children: [
+        {
+          path: 'building-materials',
+          name: 'building-materials',
+          component: About,
+          children: [
+            {
+              path: 'doors',
+              name: 'doors',
+              component: About,
+            },
+            {
+              path: 'roofs-and-ceilings',
+              name: 'roofs-and-ceilings',
+              component: About,
+            },
+            {
+              path: 'tiles',
+              name: 'tiles',
+              component: About,
+            },
+            {
+              path: 'paints',
+              name: 'paints',
+              component: About,
+            },
+          ],
+        },
+        {
+          path: 'installation-services',
+          name: 'installation-services',
+          component: About,
+        },
+      ],
     },
     {
       path: '/place-order',
