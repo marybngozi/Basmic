@@ -10,7 +10,7 @@
       <Icon icon="mdi:menu" color="#1E4D8C" height="24" />
     </button>
 
-    <MobileMenu :menu="menuItems" v-if="showMobileMenu" />
+    <MobileMenu :menu="menuItems" :showMobileMenu="showMobileMenu" />
   </nav>
 </template>
 
