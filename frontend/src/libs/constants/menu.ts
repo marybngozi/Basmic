@@ -1,3 +1,5 @@
+import Products from '@/assets/data/products.json'
+
 const Routes = [
   {
     name: 'About',
@@ -12,28 +14,7 @@ const Routes = [
         name: 'Building Materials',
         path: 'building-materials',
         desc: 'Building Materials of all kinds, doors, POP ceiling, tiles, paints, plumbing materials etc.',
-        children: [
-          {
-            name: 'Doors',
-            path: 'doors',
-            desc: 'Security Doors and strong house doors.',
-          },
-          {
-            name: 'Roofs and Ceilings',
-            path: 'roofs-and-ceilings',
-            desc: 'Shinges Roofs, POP ceilings, PVC ceilings and water collector systems.',
-          },
-          {
-            name: 'Tiles',
-            path: 'tiles',
-            desc: 'Tiles and tiles accessories.',
-          },
-          {
-            name: 'Paints',
-            path: 'paints',
-            desc: 'High quality wall and floor paints',
-          },
-        ],
+        children: Products.filter((product) => product.cat === 'building-materials'),
       },
       {
         name: 'Installation Services',

@@ -6,7 +6,7 @@
       :initial="{ opacity: 0, scale: 0 }"
       :animate="{ opacity: 1, scale: 1, transition: { duration: 0.3, ease: 'easeInOut' } }"
       :exit="{ opacity: 0, scale: 0, transition: { duration: 0.3, ease: 'easeInOut' } }"
-      class="lg:hidden bg-white absolute top-[55px] right-0 rounded-l-2xl w-full max-w-[350px] py-3 shadow-lg max-h-[80vh] overflow-y-auto origin-top-right"
+      class="lg:hidden bg-white absolute top-[55px] right-0 rounded-l-2xl w-screen max-w-[350px] py-3 shadow-lg max-h-[80vh] overflow-y-auto origin-top-right"
     >
       <ul>
         <li v-for="(item, index) in menu" :key="item.name">

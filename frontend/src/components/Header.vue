@@ -5,10 +5,9 @@ import { motion } from 'motion-v'
 
 <template>
   <motion.header
-    :initial="{ opacity: 0, y: -20 }"
-    :animate="{ opacity: 1, y: 30, transition: { duration: 0.5, ease: 'easeOut' } }"
-    :whileHover="{ scale: 1.01, transition: { duration: 0.2 } }"
-    class="flex justify-between items-center h-14 md:h-16 shadow rounded-xl px-3 md:px-4 bg-white"
+    :initial="{ opacity: 0, scaleX: 0.9, y: 30 }"
+    :animate="{ opacity: 1, scaleX: 1, transition: { duration: 0.4, ease: 'easeInOut' } }"
+    class="flex justify-between items-center h-14 md:h-16 shadow px-3 md:px-4 bg-white"
   >
     <router-link to="/" class="flex items-center gap-1 md:gap-3">
       <img

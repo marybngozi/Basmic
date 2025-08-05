@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Doors",
+    "path": "doors",
+    "desc": "Security Doors and strong house doors.",
+    "cat": "building-materials",
+    "image": "./images/doors.png"
+  },
+  {
+    "name": "Roofs and Ceilings",
+    "path": "roofs-and-ceilings",
+    "desc": "Shinges Roofs, POP ceilings, PVC ceilings and water collector systems.",
+    "cat": "building-materials",
+    "image": "./images/roofs.png"
+  },
+  {
+    "name": "Tiles",
+    "path": "tiles",
+    "desc": "Tiles and tiles accessories.",
+    "cat": "building-materials",
+    "image": "./images/tiles.png"
+  },
+  {
+    "name": "Paints",
+    "path": "paints",
+    "desc": "High quality wall and floor paints",
+    "cat": "building-materials",
+    "image": "./images/paints.png"
+  },
+  {
+    "name": "POP Ceilings",
+    "path": "roofs-and-ceilings",
+    "desc": "Already-made POP ceilings and accessories, and POP powder.",
+    "cat": "building-materials",
+    "image": "./images/pops.png"
+  }
+]

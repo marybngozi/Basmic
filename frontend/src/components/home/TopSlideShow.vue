@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { ref } from 'vue'
 import 'vue3-carousel/carousel.css'
 import { Carousel, Slide } from 'vue3-carousel'
 
