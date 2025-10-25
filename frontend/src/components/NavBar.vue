@@ -1,5 +1,5 @@
 <template>
-  <nav class="text-deep-navy">
+  <nav class="text-deep-navy h-full">
     <Menu :menu="menuItems" />
 
     <button

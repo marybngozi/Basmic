@@ -21,7 +21,7 @@ import { motion } from 'motion-v'
         :animate="{ opacity: 1, x: 0, transition: { duration: 0.5, ease: 'easeOut', delay: 0.3 } }"
         class="text-base md:text-xl lg:text-2xl text-primary-blue font-semibold"
       >
-        Basmic Ventures
+        Basmic Company
         <span class="inline md:hidden">Nig</span>
         <span class="hidden md:inline">Nigeria</span>
 
@@ -33,6 +33,7 @@ import { motion } from 'motion-v'
     <motion.div
       :initial="{ opacity: 0, x: 10 }"
       :animate="{ opacity: 1, x: 0, transition: { duration: 0.5, ease: 'easeOut', delay: 0.4 } }"
+      class="h-full flex items-center"
     >
       <NavBar />
     </motion.div>

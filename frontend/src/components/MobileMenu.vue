@@ -55,14 +55,14 @@
                         class="px-4 py-2 flex justify-between items-center cursor-pointer"
                         @click="toggleNestedSubmenu(index, childIndex)"
                       >
-                        <div class="flex flex-col">
+                        <router-link :to="{ name: child.path }" class="flex flex-col">
                           <p>{{ child.name }}</p>
                           <small v-if="child.desc" class="text-xs text-gray-500 text-left">
                             {{ child.desc }}
                           </small>
-                        </div>
+                        </router-link>
                         <span
-                          class="ml-2 transform transition-transform text-sm"
+                          class="ml-2 transform transition-transform border border-transparent text-sm block hover:border-gray-200"
                           :class="{ 'rotate-180': isNestedSubmenuOpen(index, childIndex) }"
                         >
                           <Icon icon="mdi:chevron-down" height="22" />

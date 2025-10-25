@@ -12,6 +12,9 @@
     "lint": "eslint . --fix",
     "format": "prettier --write src/"
   },
+  "engines": {
+    "node": ">=22.17.1"
+  },
   "dependencies": {
     "motion-v": "^1.1.0-alpha.1",
     "pinia": "^3.0.1",

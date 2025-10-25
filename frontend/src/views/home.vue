@@ -7,7 +7,9 @@ import { ref, onMounted, onUnmounted } from 'vue'
 const addresses = [
   {
     name: 'Ogidi Office',
-    address: '5.5 Ichi Lane Ezeiweka Road Awada, Isiokwe, Onitsha North, Anambra, Nigeria',
+    address:
+      '15 Prince Basmic Avenue Besides Access Bank, Building Materials Market, Ogidi, Anambra, Nigeria',
+    address2: 'Divine Favour line D-2, Building Materials Market, Ogidi, Anambra, Nigeria',
     phone: '+234 803 333 4840',
     class: '',
   },
@@ -23,6 +25,12 @@ const addresses = [
     phone: '+234 703 482 8064',
     class: '',
   },
+]
+const telPhones = [
+  '+234 703 482 8064',
+  '+234 803 333 4840',
+  '+234 803 716 6112',
+  '+234 708 883 2322',
 ]
 
 const isScrolled = ref(false)
@@ -105,7 +113,7 @@ onUnmounted(() => {
 
   <main>
     <!-- Locations section -->
-    <section class="bg-light-neutral/60 relative py-9 mt-12 z-[25]">
+    <section class="bg-light-neutral/60 relative pt-9 mt-12 z-[25]">
       <svg
         class="absolute -top-[80px] left-0 w-full h-[80px] z-20"
         viewBox="0 0 1440 80"
@@ -140,14 +148,34 @@ onUnmounted(() => {
           :class="`px-4 ${address.class} hover:bg-primary-blue/5 hover:rounded-tr-[200px] rounded-lg transition-colors duration-300 py-4`"
         >
           <h4 class="text-lg font-semibold text-deep-navy text-center">{{ address.name }}</h4>
-          <p class="text-sm">{{ address.address }}</p>
-          <a
+          <p class="text-sm">
+            <i class="fa-solid fa-location-dot text-xs mr-1 text-brand-red"></i>
+            {{ address.address }}
+          </p>
+          <p v-if="address.address2" class="text-sm mt-2">
+            <i class="fa-solid fa-location-dot text-xs mr-1 text-brand-red"></i
+            >{{ address.address2 }}
+          </p>
+          <!-- <a
             :href="`tel:${address.phone}`"
             class="text-brand-red text-sm hover:underline text-center block"
           >
             {{ address.phone }}
-          </a>
+          </a> -->
         </motion.div>
+      </div>
+
+      <div
+        class="bg-light-neutral h-6 w-full flex gap-7 px-3 lg:px-0 justify-evenly overflow-x-scroll no-scrollbar"
+      >
+        <a
+          v-for="phone in telPhones"
+          :href="`tel:${phone}`"
+          :key="phone"
+          class="text-brand-red text-sm hover:underline hover:font-bold block w-max text-nowrap"
+        >
+          {{ phone }}
+        </a>
       </div>
     </section>
 

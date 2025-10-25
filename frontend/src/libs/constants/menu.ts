@@ -7,21 +7,26 @@ const Routes = [
     desc: 'About us.',
   },
   {
-    name: 'Products',
+    name: 'Our Products',
     path: 'products',
     children: [
+      {
+        name: 'Installation Services',
+        path: 'installation-services',
+        desc: 'Installation Services for building materials.',
+      },
       {
         name: 'Building Materials',
         path: 'building-materials',
         desc: 'Building Materials of all kinds, doors, POP ceiling, tiles, paints, plumbing materials etc.',
         children: Products.filter((product) => product.cat === 'building-materials'),
       },
-      {
-        name: 'Installation Services',
-        path: 'installation-services',
-        desc: 'Installation Services for building materials.',
-      },
     ],
+  },
+  {
+    name: 'Place an Order',
+    path: 'place-order',
+    desc: 'Place an order for your building materials needs.',
   },
   {
     name: 'Place an Order',
